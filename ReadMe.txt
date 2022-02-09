@@ -16,3 +16,5 @@ Da bi ponovno radio sa datotekama potrebno je otkomntarisati u html-u komentare,
 
 Najviše korišteni fajlovi za spiralu 4:
 server.js,db.js,unosRasporedaS4.js,studenti.js,studenti.css,studenti.html
+
+Postavke zadataka su u folderu RequestedTasks.
