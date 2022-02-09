@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <title>Unos Studenata</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="unosStudenata.css">
+</head>
+
+<body>
+
+    <header id="menu">
+        <div>
+
+            <nav>
+                <ul>
+                    <li><a href="raspored.html">Raspored</a></li>
+                    <li><a href="aktivnost.html">Aktivnosti</a></li>
+                    <li><a href="unosRasporeda.html">Unos Rasporeda</a></li>
+                    <li><a id="current" href="unosStudenata.html">Unos Studenata</a></li>
+                    <li><a href="podaciStudent.html">O studentu</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <h1>Unos Studenata i upis u Grupu</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Unesite studenta u CSV formatu: </td>
+                <td>
+                    <textarea id="studenti"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Odaberite grupu: </td>
+                <td> <select id="grupe">
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Pošalji" id="posalji">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    <div id=proba></div>
+
+    <script src="unosStudenata.js"></script>
+
+</body>
+
+</html>

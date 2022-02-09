@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <title>Raspored Testovi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="raspored.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <h1 style="text-align: center;">Prikazan je samo raspored koji odgovara posljednjem testu</h1>
+    <div class="okviri" id="okvir"></div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+ 
+    <script class="mocha-init">
+        mocha.setup('bdd');
+        mocha.checkLeaks();
+    </script>
+    
+    <script src="iscrtajModul.js"></script>
+    
+    <script src="testRaspored.js"></script>
+    <script class="mocha-exec">
+        mocha.run();
+    </script>
+
+</body>
+
+</html>

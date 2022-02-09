@@ -1,0 +1,140 @@
+#menu div {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+#menu {
+    background-color: #55d6aa;
+}
+
+#menu::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#menu nav {
+    float: right;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#menu a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#menu a:hover {
+    color: #000;
+}
+
+#menu a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+
+#menu a:hover::before {
+    width: 100%;
+}
+
+#menu #current {
+    color: #000;
+    text-decoration: underline #000;
+}
+
+
+
+
+.okviri {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+td {
+    background-color: lightsteelblue;
+    width: 20px;
+    height: 60px;
+}
+
+td:nth-child(odd) {
+    border: 1px solid black;
+    border-left: 1px dashed black;
+}
+
+td:nth-child(even) {
+    border: 1px solid black;
+    border-right: 1px dashed black;
+}
+
+.ravnotezaParnosti {
+    display: none;
+}
+
+th {
+    border: 0px solid black;
+    font-weight: initial;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.zauzeto {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#sat {
+    font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+    td:nth-child(odd) {
+        border: hidden;
+        border: 1px solid black;
+    }
+    td:nth-child(even) {
+        border: hidden;
+        border: 1px solid black;
+    }
+    #sat {
+        display: none;
+    }
+    th, td {
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+    }
+    td:empty {
+        display: none;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="bs">
+
+<head>
+    <title>Unos rasporeda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="unosRasporeda.css">
+</head>
+
+<body>
+
+    <header id="menu">
+        <div>
+
+            <nav>
+                <ul>
+                    <li><a href="raspored.html">Raspored</a></li>
+                    <li><a href="aktivnost.html">Aktivnosti</a></li>
+                    <li><a id="current" href="unosRasporeda.html">Unos Rasporeda</a></li>
+                    <li><a href="unosStudenata.html">Unos Studenata</a></li>
+                    <li><a href="podaciStudent.html">O studentu</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <h1>Unos Predmeta i Aktivnosti</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Naziv predmeta: </td>
+                <td>
+                    <input type="text" name="naziv" id="naziv">
+                </td>
+            </tr>
+
+            <tr id="red">
+                <td>Tip akrivnosti: </td>
+                <td> <select name="tip" id="tip"><!--
+                        <option value="Predavanje">Predavanje</option>
+                        <option value="Vježbe">Vježbe</option>-->
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Vrijeme početka: </td>
+                <td><input type="number" name="pocetak" id="pocetak" step="0.5" min="8" max="19.5" value="9"></td>
+            </tr>
+
+            <tr>
+                <td>Vrijeme kraja: </td>
+                <td><input type="number" name="kraj" id="kraj" step="0.5" min="8.5" max="20" value="12"></td>
+            </tr>
+
+            <tr>
+                <td>Dan u sedmici: </td>
+                <td>
+                    <select name="dan" id="dan"><!--
+                        <option value="Ponedjeljak">Ponedjeljak</option>
+                        <option value="Utorak">Utorak</option>
+                        <option value="Srijeda">Srijeda</option>
+                        <option value="Četvrtak">Četvrtak</option>
+                        <option value="Petak">Petak</option>-->
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Pošalji" id="posalji">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+    <h2>Lista predmeta</h2>
+    <div class="liste">
+        <ul id="listaPredmeta"></ul>
+    </div>
+
+    <h2>Lista aktivnosti</h2>
+    <div class="liste">
+        <ul id="listaAktivnosti"></ul>
+    </div>
+<!--   
+    <script src="unosRasporeda.js"></script>
+-->
+    
+    <div id="proba"></div>
+    <script src="unosRasporedaS4.js"></script>
+
+</body>
+
+</html>

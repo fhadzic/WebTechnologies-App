@@ -1,0 +1,5 @@
+RMA,vjezbe,9,10.5,Ponedjeljak
+DM,predavanje,9,12,Petak
+DM,tutorijal,14,16,Utorak
+PWS,predavanje,15,17,Ponedjeljak
+WT,predavanje,9,12,Srijeda
